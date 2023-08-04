@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <article  class=" title">
+        <h1>Jogo da Velha</h1>
+    </article>
+
+    <div id="buttons">
+        <button id="btn1">2 Jogadores</button>
+        <button id="ia-player">Jogar contra IA</button>
+    </div>
+
+    <section class="hide" id="container-grid">
+        <div class=" hide" id="message">
+            <h2></h2>
+        </div>
+        <div class="box" id="block-1"></div>
+        <div class="box" id="block-2"></div>
+        <div class="box" id="block-3"></div>
+        <div class="box" id="block-4"></div>
+        <div class="box" id="block-5"></div>
+        <div class="box" id="block-6"></div>
+        <div class="box" id="block-7"></div>
+        <div class="box" id="block-8"></div>
+        <div class="box" id="block-9"></div>
+    </section>
+
+    <section class="hide" id="score-container">
+            <div class="x-line">
+                <span>X</span>:
+                <span id="player1Count">0</span>
+            </div>
+
+            <div class="o-line">
+                <span id="o"></span>:
+                <span id="player2Count">0</span>
+        </div>
+    </section>
+
+    <div class="hide">
+        <div class="x">X</div>
+        <div class="o"></div>
+    </div>
+
+    <div id="winner" class="hide"></div>
+    <h1></h1>
+</body>
+
+</html>
