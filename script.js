@@ -138,6 +138,7 @@ function checkWinner() {
 
         if (block1Child == 'x' && block4Child == 'x' && block7Child == 'x') {
             console.log('x venceu')
+            declareWinner('x')
         }
         else if (block1Child == 'o' && block4Child == 'o' && block7Child == 'o') {
             console.log('o venceu')
